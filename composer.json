@@ -1,0 +1,12 @@
+{
+  "name": "multiparcels/custom-shop-php",
+  "version": "0.1",
+  "require": {
+    "php": "^7.1"
+  },
+  "autoload": {
+    "psr-4": {
+      "MultiParcels\\": "src"
+    }
+  }
+}
