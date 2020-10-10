@@ -7,8 +7,8 @@ use MultiParcels\CustomShop\Entities\Address;
 use MultiParcels\CustomShop\Entities\Order;
 use MultiParcels\CustomShop\Entities\Product;
 
-$customStore = new CustomShop();
-$customStore->setCallbackUrl('https://example.com/multiparcels/callback');
+$customShop = new CustomShop();
+$customShop->setCallbackUrl('https://example.com/multiparcels/callback');
 
 // Orders sorted by newest first
 // Always include canceled/deleted orders, we will set the to deleted in our platform
@@ -53,9 +53,9 @@ for ($i = 1; $i <= 3; $i++) {
 }
 
 // Add order to the list
-$customStore->add($order);
+$customShop->add($order);
 
 // Response
 header('Content-Type: application/json');
-echo json_encode($customStore->toArray());
+echo json_encode($customShop->toArray());
 exit;
