@@ -39,6 +39,9 @@ class Order
     /** @var string $shipping */
     public $shipping;
 
+    /** @var int $packages */
+    public $packages;
+
     /** @var string $payment */
     public $payment;
 
@@ -237,6 +240,24 @@ class Order
     {
         $this->products[] = $product;
 
+        return $this;
+    }
+
+    /**
+     * @return int
+     */
+    public function getPackages(): int
+    {
+        return $this->packages;
+    }
+
+    /**
+     * @param  int  $packages
+     * @return Order
+     */
+    public function setPackages(int $packages): Order
+    {
+        $this->packages = $packages;
         return $this;
     }
 

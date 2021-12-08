@@ -12,7 +12,7 @@ use MultiParcels\CustomShop\Entities\Order;
 class CustomShop
 {
 
-    const VERSION = 0.1;
+    const VERSION = 0.2;
 
     /** @var \MultiParcels\CustomShop\Entities\Order[] $items */
     public $items = [];

@@ -21,6 +21,7 @@ $order->setCurrency('EUR');
 $order->setNotes('The apartment is in the second floor');
 $order->setShipping('DHL home delivery');
 $order->setPayment('Paypal');
+$order->setPackages(2);
 
 // Create receiver
 $receiver = new Address();
